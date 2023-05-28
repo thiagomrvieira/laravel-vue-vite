@@ -1,5 +1,11 @@
 import './bootstrap';
 
-import {createApp} from 'vue'
+import { createApp } from 'vue';
 
-createApp(App).mount("#app")
+import Welcome from "./components/Welcome.vue";
+
+const app = createApp();
+
+app.component('welcome', Welcome);
+
+app.mount("#app");
